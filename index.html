@@ -113,9 +113,9 @@
                 tableBody.innerHTML += `
                     <tr>
                         <td>${entry.date}</td>
-                        <td>${parseFloat(entry.rumah_kanan) || "-"}</td>
-                        <td>${parseFloat(entry.rumah_tengah) || "-"}</td>
-                        <td>${parseFloat(entry.rumah_kiri) || "-"}</td>
+                        <td>${parseFloat(entry.rumah_kanan).toFixed(2)  || "-"}</td>
+                        <td>${parseFloat(entry.rumah_tengah).toFixed(2) || "-"}</td>
+                        <td>${parseFloat(entry.rumah_kiri).toFixed(2) || "-"}</td>
                     </tr>
                 `;
             });
